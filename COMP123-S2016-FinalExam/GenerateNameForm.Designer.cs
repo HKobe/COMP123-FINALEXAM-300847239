@@ -55,9 +55,9 @@
             this.NameListGroupBox.Controls.Add(this.FirstNameListBox);
             this.NameListGroupBox.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameListGroupBox.Location = new System.Drawing.Point(85, 15);
-            this.NameListGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NameListGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.NameListGroupBox.Name = "NameListGroupBox";
-            this.NameListGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NameListGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.NameListGroupBox.Size = new System.Drawing.Size(496, 411);
             this.NameListGroupBox.TabIndex = 0;
             this.NameListGroupBox.TabStop = false;
@@ -67,7 +67,7 @@
             // 
             this.GenerateButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenerateButton.Location = new System.Drawing.Point(221, 321);
-            this.GenerateButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GenerateButton.Margin = new System.Windows.Forms.Padding(4);
             this.GenerateButton.Name = "GenerateButton";
             this.GenerateButton.Size = new System.Drawing.Size(227, 49);
             this.GenerateButton.TabIndex = 8;
@@ -88,7 +88,7 @@
             // LastNameTextBox
             // 
             this.LastNameTextBox.Location = new System.Drawing.Point(245, 244);
-            this.LastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LastNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.LastNameTextBox.Name = "LastNameTextBox";
             this.LastNameTextBox.Size = new System.Drawing.Size(201, 31);
             this.LastNameTextBox.TabIndex = 6;
@@ -106,7 +106,7 @@
             // FirstNameTextBox
             // 
             this.FirstNameTextBox.Location = new System.Drawing.Point(9, 244);
-            this.FirstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FirstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.FirstNameTextBox.Name = "FirstNameTextBox";
             this.FirstNameTextBox.Size = new System.Drawing.Size(201, 31);
             this.FirstNameTextBox.TabIndex = 4;
@@ -177,7 +177,7 @@
             "Wright",
             "Young"});
             this.LastNameListBox.Location = new System.Drawing.Point(245, 63);
-            this.LastNameListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LastNameListBox.Margin = new System.Windows.Forms.Padding(4);
             this.LastNameListBox.Name = "LastNameListBox";
             this.LastNameListBox.Size = new System.Drawing.Size(201, 96);
             this.LastNameListBox.Sorted = true;
@@ -249,7 +249,7 @@
             "Thomas",
             "William"});
             this.FirstNameListBox.Location = new System.Drawing.Point(9, 63);
-            this.FirstNameListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FirstNameListBox.Margin = new System.Windows.Forms.Padding(4);
             this.FirstNameListBox.Name = "FirstNameListBox";
             this.FirstNameListBox.Size = new System.Drawing.Size(201, 96);
             this.FirstNameListBox.Sorted = true;
@@ -259,12 +259,13 @@
             // 
             this.NextButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NextButton.Location = new System.Drawing.Point(505, 528);
-            this.NextButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NextButton.Margin = new System.Windows.Forms.Padding(4);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(151, 49);
             this.NextButton.TabIndex = 7;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // GenerateNameForm
             // 
@@ -276,11 +277,11 @@
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.NameListGroupBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GenerateNameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generate Name";
-            this.Load += new System.EventHandler(this.GenerateNameForm_Load);
+            this.Load += new System.EventHandler(this.GenerateNames);
             this.NameListGroupBox.ResumeLayout(false);
             this.NameListGroupBox.PerformLayout();
             this.ResumeLayout(false);
