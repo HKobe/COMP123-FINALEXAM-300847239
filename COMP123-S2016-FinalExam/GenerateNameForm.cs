@@ -22,13 +22,18 @@ namespace COMP123_S2016_FinalExam
         {
             InitializeComponent();
         }
-        //Generate Names Method, Returns Void
+        //Generate Names Method, Returns Void (Please check my code here, not functinoal code)
         private void GenerateNames(object sender, EventArgs e)
         {
-           // Random random = new Random();
-            FirstNameListBox.SelectedIndex = 0;
+            Random random = new Random();
 
-            LastNameListBox.SelectedIndex = 0;
+            //randomly choose names
+            FirstNameTextBox.Text = FirstNameListBox.ToString();
+            LastNameTextBox.Text = LastNameListBox.SelectedIndex.ToString();
+
+            //Setting the value of the character properties to that of the first name and last name text boxes
+            Program.character.FirstName = FirstNameTextBox.ToString();
+            Program.character.LastName = LastNameTextBox.ToString();
 
 
         }
