@@ -29,27 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.SplashScreenProgressBar = new System.Windows.Forms.ProgressBar();
             this.SplashScreenTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // progressBar1
+            // SplashScreenProgressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(70, 184);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(171, 33);
-            this.progressBar1.TabIndex = 0;
+            this.SplashScreenProgressBar.Location = new System.Drawing.Point(74, 227);
+            this.SplashScreenProgressBar.Name = "SplashScreenProgressBar";
+            this.SplashScreenProgressBar.Size = new System.Drawing.Size(437, 33);
+            this.SplashScreenProgressBar.TabIndex = 0;
             // 
             // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.BackgroundImage = global::COMP123_S2016_FinalExam.Properties.Resources.splashSceen;
+            this.ClientSize = new System.Drawing.Size(600, 320);
             this.ControlBox = false;
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.SplashScreenProgressBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SplashForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
             this.Load += new System.EventHandler(this.SplashForm_Load);
             this.ResumeLayout(false);
@@ -58,7 +61,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar SplashScreenProgressBar;
         private System.Windows.Forms.Timer SplashScreenTimer;
     }
 }
