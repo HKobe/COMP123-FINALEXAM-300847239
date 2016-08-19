@@ -19,6 +19,8 @@ namespace COMP123_S2016_FinalExam
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //SplshForm will load before AbilityGenerator
+            Application.Run(new SplashForm());
             Application.Run(new AbilityGeneratorForm());
         }
     }

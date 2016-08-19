@@ -36,9 +36,18 @@
             // SplashScreenProgressBar
             // 
             this.SplashScreenProgressBar.Location = new System.Drawing.Point(74, 227);
+            this.SplashScreenProgressBar.MarqueeAnimationSpeed = 300;
+            this.SplashScreenProgressBar.Maximum = 1000;
             this.SplashScreenProgressBar.Name = "SplashScreenProgressBar";
             this.SplashScreenProgressBar.Size = new System.Drawing.Size(437, 33);
+            this.SplashScreenProgressBar.Step = 100;
+            this.SplashScreenProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.SplashScreenProgressBar.TabIndex = 0;
+            // 
+            // SplashScreenTimer
+            // 
+            this.SplashScreenTimer.Interval = 1000;
+            this.SplashScreenTimer.Tick += new System.EventHandler(this.SplashScreenTimer_Tick);
             // 
             // SplashForm
             // 
